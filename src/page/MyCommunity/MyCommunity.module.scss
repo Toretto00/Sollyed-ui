@@ -1,0 +1,139 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    padding: 8px;
+    overflow: hidden;
+    background-color: #202225;
+}
+
+.community-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seperate {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--text-sub-color);
+    height: 2px;
+    //width: 12px;
+}
+
+.community-action {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2f3136;
+}
+
+.communityTitle-action {
+    background-color: #2f3136;
+    width: 220px;
+}
+
+.community-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #2f3136;
+    color: var(--text-secondary-color);
+
+    .communityIcon {
+        color: var(--text-secondary-color) !important;
+    }
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background-color: #292b2f;
+    color: var(--white-color);
+
+    .userInfo {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 6px;
+        flex-grow: 1;
+        &:hover {
+            cursor: pointer;
+            background-color: #3f434a;
+        }
+    }
+
+    .userDescription {
+        margin-left: 8px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .userAction {
+        color: var(--text-sub-color) !important;
+
+        &:hover {
+            background-color: #3f434a;
+        }
+    }
+}
+
+.memberInfo {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
+
+    .memberName {
+        margin-left: 8px;
+    }
+}
+
+.memberInfoDisable {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    opacity: 0.4;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+        opacity: 1;
+    }
+
+    .memberName {
+        margin-left: 8px;
+    }
+}
+
+.communityContent {
+    background-color: #36393f;
+    width: calc(100vw - 220px - 220px - 146px);
+    height: 100vh;
+}
+
+.memberContainer {
+    background-color: #2f3136;
+    padding: 8px;
+    border-radius: 4px;
+    color: var(--text-secondary-color);
+    height: 100vh;
+
+    .memberDescription {
+        display: flex;
+        flex-direction: column;
+        .memberStatus {
+            margin-left: 8px;
+            font-size: 1.2rem;
+        }
+    }
+}

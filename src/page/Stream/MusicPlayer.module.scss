@@ -1,0 +1,66 @@
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .musicPlayerContainer {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        padding: 10px;
+        border-radius: 8px;
+        color: var(--text-secondary-color);
+        background-color: var(--background-color);
+
+        img {
+            margin: 10px;
+            //border-radius: 8px;
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+        }
+    }
+    .musicPlayerAction {
+        display: flex;
+        margin: 10px 0;
+        .playButton {
+            padding: 10px;
+            margin: 0 10px;
+            background-color: #1db954 !important;
+            border-radius: 50%;
+            color: #fff;
+        }
+    }
+
+    .musicTitleContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .musicTitle {
+            color: var(--text-sub-color);
+        }
+        .musicSubTitle {
+            font-size: 1.2rem;
+        }
+    }
+    .sliderContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .slider {
+            margin: 0 10px;
+            color: #1db954;
+            flex-grow: 1;
+        }
+        .timeDisplay {
+            padding: 10px;
+            color: var(--text-secondary-color);
+            font-size: 1.2rem;
+        }
+    }
+}

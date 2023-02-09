@@ -1,0 +1,176 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.hearingbtn {
+    display: flex;
+    background-color: var(--primary-color) !important;
+    height: 160px;
+    width: 160px;
+    margin: 36px auto 36px auto !important;
+
+    &:hover {
+        animation: zoom-in-zoom-out 4s ease infinite;
+    }
+
+    @keyframes zoom-in-zoom-out {
+        0% {
+            transform: scale(1, 1);
+        }
+        50% {
+            transform: scale(1.2, 1.2);
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.cancle-hearing-btn {
+    color: var(--white-color) !important;
+    width: fit-content;
+    justify-content: center;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--primary-color) !important;
+    }
+}
+
+.is-animetion span {
+    display: inline-block;
+    font-size: 2.4rem;
+    //animation: wave-text 1s ease-in-out infinite;
+
+    @keyframes wave-text {
+        0% {
+            transform: translateY(0rem);
+        }
+        60% {
+            transform: translateY(-0.2rem);
+        }
+        100% {
+            transform: translateY(0rem);
+        }
+    }
+}
+
+.is-animetion {
+    span:nth-of-type(1) {
+        animation-delay: 0s;
+    }
+    span:nth-of-type(2) {
+        animation-delay: 0.1s;
+    }
+    span:nth-of-type(3) {
+        animation-delay: 0.2s;
+    }
+    span:nth-of-type(4) {
+        animation-delay: 0.3s;
+    }
+    span:nth-of-type(5) {
+        animation-delay: 0.4s;
+    }
+    span:nth-of-type(6) {
+        animation-delay: 0.5s;
+    }
+    span:nth-of-type(7) {
+        animation-delay: 0.6s;
+    }
+    span:nth-of-type(8) {
+        animation-delay: 0.7s;
+    }
+    span:nth-of-type(9) {
+        animation-delay: 0.8s;
+    }
+    span:nth-of-type(10) {
+        animation-delay: 0.9s;
+    }
+    span:nth-of-type(11) {
+        animation-delay: 1s;
+    }
+    span:nth-of-type(12) {
+        animation-delay: 1.1s;
+    }
+}
+
+.container {
+    height: 8rem;
+    margin: 36px 0;
+}
+.container span {
+    display: inline-block;
+    width: 4px;
+    height: 10px;
+    margin: 0 4px;
+    background: var(--primary-color);
+    animation: audio-wave 2s infinite ease-in-out;
+
+    @keyframes audio-wave {
+        0% {
+            height: 15px;
+            transform: translateY(0px);
+        }
+        25% {
+            height: 60px;
+            transform: translateY(20px);
+        }
+        50% {
+            height: 15px;
+            transform: translateY(0px);
+        }
+        100% {
+            height: 10px;
+            transform: translateY(0px);
+        }
+    }
+}
+.container span:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.container span:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.container span:nth-child(3) {
+    animation-delay: 0.9s;
+}
+.container span:nth-child(4) {
+    animation-delay: 1.2s;
+}
+.container span:nth-child(5) {
+    animation-delay: 1.5s;
+}
+.container span:nth-child(6) {
+    animation-delay: 1.8s;
+}
+.container span:nth-child(7) {
+    animation-delay: 2.1s;
+}
+.container span:nth-child(8) {
+    animation-delay: 2.4s;
+}
+.container span:nth-child(9) {
+    animation-delay: 2.7s;
+}
+.container span:nth-child(10) {
+    animation-delay: 3s;
+}
+.container span:nth-child(11) {
+    animation-delay: 3.3s;
+}
+.container span:nth-child(12) {
+    animation-delay: 3.6s;
+}
+.container span:nth-child(13) {
+    animation-delay: 3.9s;
+}
+.container span:nth-child(14) {
+    animation-delay: 4.2s;
+}
+.container span:nth-child(15) {
+    animation-delay: 4.5s;
+}

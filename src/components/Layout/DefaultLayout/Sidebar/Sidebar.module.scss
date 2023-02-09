@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-area: side-bar;
+    min-height: 0;
+    flex: 1;
+    width: calc(var(--nav-bar-width) + 9px);
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+
+.sidebar-playlists {
+    flex: 1;
+}
